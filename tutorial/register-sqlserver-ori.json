@@ -7,11 +7,9 @@
         "database.hostname" : "sqlserver",
         "database.port" : "1433",
         "database.user" : "sa",
-        "database.password" : "Admin123",
-        "database.dbname" : "SmartCA",
+        "database.password" : "Password!",
+        "database.dbname" : "testDB",
         "database.history.kafka.bootstrap.servers" : "kafka:9092",
-        "transforms": "unwrap",
-        "transforms.unwrap.type": "io.debezium.transforms.ExtractNewRecordState",
         "database.history.kafka.topic": "schema-changes.inventory"
     }
 }

@@ -21,7 +21,7 @@ services:
     environment:
      - ACCEPT_EULA=Y
      - MSSQL_PID=Standard
-     - SA_PASSWORD=Password!
+     - SA_PASSWORD=Admin123
      - MSSQL_AGENT_ENABLED=true
   connect:
     image: debezium/connect:${DEBEZIUM_VERSION}

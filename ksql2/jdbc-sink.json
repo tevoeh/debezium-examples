@@ -1,0 +1,13 @@
+{
+    "name": "jdbc-sink2",
+    "config": {
+        "connector.class": "io.confluent.connect.jdbc.JdbcSinkConnector",
+        "tasks.max": "1",
+        "topics": "",
+        "connection.url": "jdbc:postgresql://postgres:5432/inventory?user=postgresuser&password=postgrespw",
+        "auto.create": "true",
+        "insert.mode": "upsert",
+        "pk.fields": "ids",
+        "pk.mode": "record_key"
+    }
+}

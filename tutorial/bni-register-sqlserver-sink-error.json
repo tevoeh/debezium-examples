@@ -1,0 +1,17 @@
+{
+  "name": "JdbcSinkConnectorConnector_0",
+  "config": {
+    "connector.class": "io.confluent.connect.jdbc.JdbcSinkConnector",
+    "topics": "TBL_DEBITUR",
+    "connection.url": "jdbc:sqlserver://sqlserver:1433;databaseName=SmartCA;",
+    "connection.user": "SA",
+    "connection.password": "Admin123",
+    "key.converter": "org.apache.kafka.connect.storage.StringConverter",
+    "insert.mode": "upsert",
+    "table.name.format": "${topic}",
+    "auto.create": true,
+    "auto.evolve": true,
+    "pk.mode": "record_key",
+    "pk.fields": "MESSAGE_KEY"
+  }
+}
